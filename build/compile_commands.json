@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/home/zephyr/WorkSpace/VSCode/WebServer/build",
+  "command": "/usr/bin/c++   -g -std=gnu++23 -o CMakeFiles/webserver.dir/main.cpp.o -c /home/zephyr/WorkSpace/VSCode/WebServer/main.cpp",
+  "file": "/home/zephyr/WorkSpace/VSCode/WebServer/main.cpp",
+  "output": "CMakeFiles/webserver.dir/main.cpp.o"
+}
+]
