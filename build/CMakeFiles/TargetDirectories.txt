@@ -1,3 +1,0 @@
-/home/carbon/workspace/WebServer/build/CMakeFiles/webserver.dir
-/home/carbon/workspace/WebServer/build/CMakeFiles/edit_cache.dir
-/home/carbon/workspace/WebServer/build/CMakeFiles/rebuild_cache.dir
