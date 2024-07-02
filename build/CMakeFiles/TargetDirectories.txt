@@ -1,3 +1,0 @@
-/home/zephyr/WorkSpace/VSCode/WebServer/build/CMakeFiles/webserver.dir
-/home/zephyr/WorkSpace/VSCode/WebServer/build/CMakeFiles/edit_cache.dir
-/home/zephyr/WorkSpace/VSCode/WebServer/build/CMakeFiles/rebuild_cache.dir
