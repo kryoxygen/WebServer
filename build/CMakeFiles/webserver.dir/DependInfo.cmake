@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/zephyr/WorkSpace/VSCode/WebServer/logger/log.cpp" "CMakeFiles/webserver.dir/logger/log.cpp.o" "gcc" "CMakeFiles/webserver.dir/logger/log.cpp.o.d"
   "/home/zephyr/WorkSpace/VSCode/WebServer/main.cpp" "CMakeFiles/webserver.dir/main.cpp.o" "gcc" "CMakeFiles/webserver.dir/main.cpp.o.d"
   )
 

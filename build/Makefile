@@ -129,6 +129,30 @@ webserver/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/build
 .PHONY : webserver/fast
 
+logger/log.o: logger/log.cpp.o
+.PHONY : logger/log.o
+
+# target to build an object file
+logger/log.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/logger/log.cpp.o
+.PHONY : logger/log.cpp.o
+
+logger/log.i: logger/log.cpp.i
+.PHONY : logger/log.i
+
+# target to preprocess a source file
+logger/log.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/logger/log.cpp.i
+.PHONY : logger/log.cpp.i
+
+logger/log.s: logger/log.cpp.s
+.PHONY : logger/log.s
+
+# target to generate assembly for a file
+logger/log.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/webserver.dir/build.make CMakeFiles/webserver.dir/logger/log.cpp.s
+.PHONY : logger/log.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -162,6 +186,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... webserver"
+	@echo "... logger/log.o"
+	@echo "... logger/log.i"
+	@echo "... logger/log.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
