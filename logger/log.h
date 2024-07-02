@@ -16,9 +16,11 @@ public:
 	{
 		// Log::Instance()->async_write_log();
 	}
-
+	// 初始化日志
 	bool init(const char *file_name, int close_log, int log_buf = 8192, int spilt_lines = 5000000, int max_queue = 0);
+	// 写日志
 	void write_log(int level, const char *format, ...);
+	// 刷新日志
 	void flush(void);
 
 private:

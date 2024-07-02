@@ -142,6 +142,41 @@ public:
 	}
 
 	//TODO: 增加超时处理
+	bool pop(T& value, int timeout)
+	{
+		// 纳秒
+		struct timespec t = {0, 0};
+		// 微秒
+		struct timeval now ={0, 0};
+		// 获得当前时间
+		gettimeofday(&now, nullptr);
+		m_locker.lock();
+		if (m_size<0)
+		{
+			t.tv_sec = now.tv_sec + timeout/1000;
+			t.tv_nsec = (timeout%1000)*1000;
+			if (!m_cond.timewait(m_locker.get(), t))
+			{
+				m_locker.unlock();
+				return false;
+			}
+
+			// 超时
+			if (m_size<=0)
+			{
+				m_locker.unlock();
+				return false;
+			}
+			// 正常
+			m_front = (m_front+1)%m_max_size;
+			value = m_array[m_front];
+			m_size--;
+			m_locker.unlock();
+			return true;
+			
+		}
+		
+	}
 private:
 	locker m_locker;
 	condition m_cond;
